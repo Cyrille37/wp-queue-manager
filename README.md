@@ -10,6 +10,7 @@ Managing asynchronous or/and long running jobs in Wordpress.
 * don't call WP with http request because it's depends on http request time limit,
   * really load WP in job runner
   * make it possible to distinguish between tasks requiring WP plugins and those that do not need them (optimization)
+    * not possible, we need at least database configuration ans loading wp-config will load many stuff like activated plugins.
 
 In a later time, it should be nice to implements the runner for message queue service, but there is already [10up/WP-Minions](https://github.com/10up/WP-Minions) for RabbitMQ and Gearman with forks for SQS and AWS service. 
 
