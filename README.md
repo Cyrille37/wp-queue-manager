@@ -10,7 +10,7 @@ Managing asynchronous or/and long running jobs in Wordpress.
   * really load WP in job runner
   * make it possible to distinguish between tasks requiring WP plugins and those that do not need them (optimization)
 
-Then, in a later time, it should be nice to implements the runner for RabbitMQ and other message queue.
+In a later time, it should be nice to implements the runner for message queue service, but there is already [10up/WP-Minions](https://github.com/10up/WP-Minions) for RabbitMQ and Gearman with forks for SQS and AWS service. 
 
 ## Inspiration
 
