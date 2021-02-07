@@ -18,4 +18,6 @@ In a later time, it should be nice to implements the runner for message queue se
 
 A big thank you to the designers of the projects [wp-background-processing](https://github.com/deliciousbrains/wp-background-processing) and [10up/WP-Minions](https://github.com/10up/WP-Minions) where I found much knowledge and inspiration.
 
-I should fork WP-Minions to add a SystemCall "minion" but I prefer to not have `php-amqplib` dependency.
+I should have:
+- fork WP-Minions to add a Redis "minion" but it would not be runnable on mutualized hosting.
+- use WP-Background-Pocessing but it is sensible to http request time limit that is not compatible with very long running job.
